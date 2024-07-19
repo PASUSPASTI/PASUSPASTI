@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASUSPASTI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+      .header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+      }
+      .navbar {
+        background-color: #222;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 20px;
+      }
+
+      .navbar-toggle {
+        cursor: pointer;
+        display: none; /* Hide toggle on large screens */
+      }
+
+      .toggle-icon {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+      }
+
+      .navbar-menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .navbar-menu li {
+        margin-right: 20px;
+      }
+
+      .navbar-menu li a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+      }
+
+      .navbar-menu li a:hover {
+        color: #ddd;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .navbar-menu {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          background-color: #333;
+          width: 100%;
+          text-align: center;
+        }
+
+        .navbar-menu.active {
+          display: flex;
+        }
+
+        .navbar-toggle {
+          display: block;
+        }
+      }
+      .main {
+        min-height: 460px;
+        background-color: lightgray;
+      }
+      .footer {
+        background-color: #222;
+        color: white;
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      alert("PERINGATAN!!,web ini hanya bisa di buka di handphone atau smartphone saja karena dalam tahap pengembangan.");
+      function toggleNavbar() {
+      const navbarMenu = document.getElementById('navbarMenu');
+      navbarMenu.classList.toggle('active');
+    }
+    </script>
+    <nav class="navbar">
+      <div class="navbar-toggle" onclick="toggleNavbar()">
+        <div class="toggle-icon"></div>
+        <div class="toggle-icon"></div>
+        <div class="toggle-icon"></div>
+      </div>
+      <ul class="navbar-menu" id="navbarMenu">
+        <li><a href="#"><h3>BERANDA</h3></a></li>
+        <li><a href="#"><h3>PRESTASI</h3></a></li>
+        <li><a href="#"><h3>DOKUMENTASI</h3></a></li>
+        <li><a href="#"><h3>TENTANG</h3></a></li>
+      </ul>
+    </nav>
+    <div class="header" id="header">
+      <h1 style="text-align: center;">PASUSPASTI</h1>
+    </div>
+    <div class="main" id="main">
+      <div class="article">
+        
+      </div>
+      <div class="article">
+        
+      </div>
+      <div class="article">
+        
+      </div>
+    </div>
+    <div class="footer" id="footer">
+      <center><p>&copy; 2024 PASUSPASTI.All Rights Reserved.</p></center>
+    </div>
+  </body>
+</html>
